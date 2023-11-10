@@ -5,6 +5,7 @@ class Particle {
   PVector acceleration;
   
   Particle(float x, float y){
+    fill(random(255), random(255), random(255));
     position = new PVector(x, y);
     velocity = new PVector(random(-2, 2), random(-2, 2));
     acceleration = new PVector(0, 0.5);
